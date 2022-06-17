@@ -1,0 +1,17 @@
+{
+    "contacts": [
+        {
+            "name": "John Doe",
+            "position": "CEO",
+            "phone": "+7 (495) 789-45-90",
+            "email": "info@gmail.com"
+        },
+        {
+            "name": "Boris",
+            "position": "CTO",
+            "phone": "+7 (495) 789-45-90",
+            "email": "abc@gmail.com"
+        }
+
+    ]
+}
