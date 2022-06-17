@@ -10,7 +10,7 @@ const URL = process.env.MONGODB_URL_KEY_API;
 
 async function connect() {
     try {
-        await mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+        await mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false,useCreateIndex: true }).then(() => {
             console.log('Connected database from mongodb');
         })
     }catch(error){console.log("Connect Failed");};
