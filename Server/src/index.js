@@ -7,6 +7,7 @@ const menuRoutes = require("./routes/menuRoutes.js");
 const googleRoutes = require("./routes/googleRoutes.js");
 const subscribeRoutes = require("./routes/subscribeRoutes");
 const bookRoutes = require("./routes/bookRoutes");
+const accountRoutes = require("./routes/accountRoutes");
 const fs = require("fs");
 const path = require("path");
 
@@ -25,6 +26,7 @@ app.use('/api/menu', menuRoutes);
 app.use('/api/user',googleRoutes);
 app.use('/api',subscribeRoutes);
 app.use('/api',bookRoutes);
+app.use('/api',accountRoutes);
 
 
 const PORT = process.env.PORT || 5000;

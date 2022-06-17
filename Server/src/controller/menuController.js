@@ -2,7 +2,6 @@
 const router = require('express').Router();
 const multer = require('multer');
 const menuSchema = require('../models/MenuSchema');
-const { upload } = require('../models/Uploads');
 
 const getMenu = async (req, res, next) => {
     const menu = await menuSchema.find();

@@ -6,6 +6,9 @@ const BookTable = new mongoose.Schema({
     type: String,
     required: true,
   },
+  email: {
+    type: String,
+  },
   amount: {
     type: Number,
     required: true,
@@ -17,6 +20,15 @@ const BookTable = new mongoose.Schema({
   day: {
     type: String,
     required: true,
+  },
+  type: {
+    type: String,
+    enum: ["Pending", "Confirmed", "Cancelled"],
+    default: "Pending",
+  },
+  status: {
+    type: Boolean,
+    default: true,
   },
   createAt: {
     type: Date,

@@ -1,5 +1,5 @@
 const express = require("express");
-const {bookTableController, getBookTableController, deleteBookTableController} = require("../controller/bookTableController");
+const {bookTableController, getBookTableController, cancelBookTableController, editBookTableController} = require("../controller/bookTableController");
 
 const router = express.Router();
 
@@ -11,7 +11,11 @@ router
     .route('/get-book-table')
     .get(getBookTableController);
 router 
-    .route('/delete-book-table/:id')
-    .delete(deleteBookTableController);
+    .route('/cancel-booking/:id')
+    .get(cancelBookTableController);
+
+router
+    .route('/edit-booking/:id')
+    .get(editBookTableController);
 
 module.exports = router;
