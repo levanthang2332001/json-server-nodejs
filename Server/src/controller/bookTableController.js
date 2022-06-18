@@ -40,7 +40,7 @@ const sendGmail = (name, email,amount , sliceDay, time, id) => {
         <p>We will contact you as soon as possible.</p>
         <p>Thank you.</p>
         <br />
-        <p>If you want to cancel your booking, please click <a href="http://localhost:5000/api/cancel-booking/${id}">here</a></p>
+        <p>If you want to cancel your booking, please click <a href="https://restaurant-json-server.herokuapp.com/api/cancel-booking/${id}">here</a></p>
       </div>`
     };
     
